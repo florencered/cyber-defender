@@ -1,0 +1,61 @@
+/* ------------------------------ScrollBar---------------------------------------------------- */
+.scrollBar::-webkit-scrollbar {
+  width: 10px;
+}
+
+.scrollBar::-webkit-scrollbar-thumb {
+  background: #8a44ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #ded3ff,
+    #8a44ff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #ded3ff,
+    #8a44ff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.scrollBar::-webkit-scrollbar-thumb:hover {
+  background: #8a44ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #ded3ff,
+    #8a44ff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #ded3ff,
+    #8a44ff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.main {
+  height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    #8a44ff,
+    #a479ff,
+    #c0a7ff,
+    #ded3ff,
+    #ffffff
+  );
+}
+
+.intro-text {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-size: 3rem;
+  color: white;
+}
+
+.svg-center {
+  display: flex;
+  justify-content: right;
+}
+
+.my-svg {
+  width: 45%;
+}
