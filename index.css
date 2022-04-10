@@ -1,10 +1,24 @@
+/* ---------------------------------HTML---------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* disabling horizontal scroll */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 /* ------------------------------Google Fonts--------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Cinzel+Decorative:wght@400;700&family=Courgette&family=Poppins:wght@300&display=swap");
+
 /* ------------------------------ScrollBar---------------------------------------------------- */
 .scrollBar::-webkit-scrollbar {
   width: 10px;
 }
-
 .scrollBar::-webkit-scrollbar-thumb {
   background: #8a44ff; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -85,30 +99,63 @@ logo img {
 }
 
 .intro {
-  padding: 20px;
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  /* border: 2px solid black; */
 }
 
-.intro-font {
-  font-size: 2rem;
-  font-family: "Black Ops One", cursive;
-  font-family: "Cinzel Decorative", cursive;
-  font-family: "Courgette", cursive;
-  font-family: "Poppins", sans-serif;
+.intro-text {
+  flex: 1 1 200px;
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.intro-child {
-  width: 50%;
-  float: left;
-  padding: 20px;
-  font-size: 3rem;
+.intro-heading {
+  font-size: 5rem;
   color: white;
-  border: 2px solid red;
+  /* border: 2px solid white; */
+  padding: 0 2rem 0 2rem;
+  margin: 1rem;
+  animation: neon 2s ease-in-out infinite alternate;
 }
 
-.intro-font {
+@media screen and (max-width: 480px) {
+  .intro-heading {
+    font-size: 3rem;
+  }
+}
+
+@keyframes neon {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #a600ff,
+      0 0 70px #50039d, 0 0 80px #4c03a6c5, 0 0 100px #430f7e, 0 0 150px #37075a;
+  }
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #a600ff,
+      0 0 35px #50039d, 0 0 40px #4c03a6c5, 0 0 50px #430f7e, 0 0 75px #37075a;
+  }
+}
+
+.intro-button {
+  border: 2px solid green;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.intro-svg {
+  flex: 1 1 200px;
+  /* border: 2px solid blue; */
   text-align: center;
 }
 
+.intro-svg svg {
+  height: 75%;
+}
 /******************sponsors*******************/
 /*Implement*/
 .sponsor-feature {
