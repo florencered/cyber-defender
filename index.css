@@ -31,8 +31,47 @@
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+/* Navbar */
+.nav-item {
+  font-family: "Roboto", sans-serif;
+}
+
+@media screen and (min-width: 200px) {
+  .nav-item {
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 370px) {
+  .nav-item {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (min-width: 780px) {
+  .nav-item {
+    font-size: 2rem;
+  }
+  .content h1 {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .nav-item {
+    padding: 0 2rem 0 2rem;
+  }
+}
+
+logo img {
+  height: 100px;
+}
+
+/* ------------Main content-------------- */
+
 .main {
-  height: 100vh;
   background-image: linear-gradient(
     to bottom,
     #8a44ff,
@@ -43,19 +82,15 @@
   );
 }
 
-.intro-text {
-  display: flex;
-  justify-content: left;
-  align-items: center;
+.intro {
+  padding: 20px;
+}
+
+.intro-child {
+  width: 50%;
+  float: left;
+  padding: 20px;
+  /* border: 2px solid red; */
   font-size: 3rem;
   color: white;
-}
-
-.svg-center {
-  display: flex;
-  justify-content: right;
-}
-
-.my-svg {
-  width: 45%;
 }
