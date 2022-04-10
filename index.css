@@ -1,3 +1,5 @@
+/* ------------------------------Google Fonts--------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Cinzel+Decorative:wght@400;700&family=Courgette&family=Poppins:wght@300&display=swap");
 /* ------------------------------ScrollBar---------------------------------------------------- */
 .scrollBar::-webkit-scrollbar {
   width: 10px;
@@ -86,31 +88,40 @@ logo img {
   padding: 20px;
 }
 
+.intro-font {
+  font-size: 2rem;
+  font-family: "Black Ops One", cursive;
+  font-family: "Cinzel Decorative", cursive;
+  font-family: "Courgette", cursive;
+  font-family: "Poppins", sans-serif;
+}
+
 .intro-child {
   width: 50%;
   float: left;
   padding: 20px;
-  /* border: 2px solid red; */
   font-size: 3rem;
   color: white;
+  border: 2px solid red;
 }
-/******************sponsers*******************/
 
+.intro-font {
+  text-align: center;
+}
 
+/******************sponsors*******************/
 /*Implement*/
-
 .sponsor-feature {
-    background-color: white;
-    padding-left: 15px;
-    padding-right: 15px;
-    
-    min-height: 150px; 
+  background-color: white;
+  padding-left: 15px;
+  padding-right: 15px;
 
-   
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 2px 0;
+  min-height: 150px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2px 0;
 }
 
 /*#id-sponsors .carousel {
@@ -123,13 +134,14 @@ logo img {
     bottom: -15px;
 } */
 /**glowing animation**/
-.glowing:hover{
-  box-shadow: 1px 1px 1px black, 0 0 10px blue, 0 0 2px darkblue;
 
-} 
-h2{
-  font-size:3rem;
-    color: #fff;
-    text-align: center;
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px
+.glowing:hover {
+  box-shadow: 1px 1px 1px black, 0 0 10px blue, 0 0 2px darkblue;
+}
+h2 {
+  font-size: 3rem;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6,
+    0 0 25px #0073e6, 0 0 30px;
 }
