@@ -113,9 +113,9 @@ logo img {
   padding-top: 1rem;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 800px) {
   .intro {
-    height: auto;
+    height: auto !important;
   }
 }
 .intro-text {
@@ -172,6 +172,13 @@ logo img {
 
 .intro-svg svg {
   height: 75%;
+}
+
+@media screen and (max-width: 480px) {
+  .intro-svg {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* -------------------About us-------------------- */
