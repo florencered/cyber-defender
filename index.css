@@ -201,7 +201,7 @@ logo img {
   margin: 0.5rem;
   text-align: center;
   font-family: "Bebas Neue", cursive;
-  animation: fadeIn 5s;
+  animation: fadeIn 3s;
   /* border: 2px solid blue; */
 }
 
@@ -443,7 +443,5 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-
   }
 }
